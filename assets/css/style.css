@@ -3,13 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #767070;
     font-family: 'Raleway', sans-serif;
 }
 
 body
-{
+{    
+    color: #767070;
     background-color: #f9f9f9;
+    background-image: url(../../JPG/02_BurgerHouse_Home_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 4668px;
 }
 
 .raleway_bold
@@ -24,7 +28,6 @@ body
     font-weight: 400;
 }
 
-
 .standard_width
 {
     max-width: 1200px;
@@ -33,6 +36,74 @@ body
     margin: auto;
 }
 
+.two_columns
+{
+    display: flex;
+}
+.column_left
+{
+    flex: 1;
+}
+
+.column_right
+{
+    flex: 1;
+}
+.top_container
+{
+    opacity: 0.3;
+    width: 100%;
+    background-color: #191d20;
+}
+
+.top_container .content
+{
+    height: 40px;
+}
+.top_container .two_columns
+{
+    height: inherit;
+}
+
+.top_container .column_left
+{
+    display: flex;
+}
+
+.top_container .column_right
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social_icon
+{
+    width: 40px;
+    height: 40px;
+    background-color: #333739;
+    margin-right: 1px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+.social_icon i
+{
+    color: #191d20;
+    font-size: 20px;
+}
+
+.social_icon:hover
+{
+    background-color: #474c4f;
+}
+
+.social_icon:hover i
+{
+    color: #fff;
+}
+
+/*
 .top_container
 {
     background-color: #191d20;
@@ -63,21 +134,7 @@ body
     place-items: center;
 }
 
-.social_icon i
-{
-    color: #191d20;
-    font-size: 20px;
-}
 
-.social_icon:hover
-{
-    background-color: #474c4f;
-}
-
-.social_icon:hover i
-{
-    color: #fff;
-}
 
 .top_right
 {
