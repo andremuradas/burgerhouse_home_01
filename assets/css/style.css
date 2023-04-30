@@ -48,10 +48,24 @@ body
 
 .standart_btn
 {
+    font-size: 14px;
+    font-weight: 700;
     width: 200px;
     height: 50px;
     display: grid;
     place-items: center;
+    cursor: pointer;
+}
+
+.btn_with_to_red
+{
+    border: 1px solid #fff;
+}
+
+.btn_with_to_red:hover
+{
+    border: 1px solid #ff1200 !important;
+    background-color: #ff1200 !important;
 }
 
 .two_columns
@@ -128,7 +142,7 @@ header
     color: #fff;
 }
 
-.column_right span
+.top_container .column_right span
 {
     color: #fff;
     font-size: 14px;
@@ -269,7 +283,6 @@ header
 
 .slider_width
 {
-    opacity: 0.3;
     position: relative;
     margin: auto;
     max-width: 1920px;
@@ -337,21 +350,30 @@ header
 
 .slide .two_columns .column_left
 {
-    width: 860px;
+    width: 872px;
     flex: none;
 }
 
 .slide .two_columns .column_right
 {
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #fff;
 }
 
 .slide .two_columns .column_right span
 {
-    margin: 0;
+    margin-bottom: 14px;
 }
+
+.slide .two_columns .column_right .standart_btn
+{
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
 
 
 /*
