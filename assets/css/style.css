@@ -367,7 +367,8 @@ header
 .slider_container
 {
     display: flex;
-    margin-left: calc((-1920px * 2));
+    width: fit-content;
+    transition: all ease 0.3s;
 }
 
 .slide .two_columns
