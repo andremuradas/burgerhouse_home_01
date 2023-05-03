@@ -8,9 +8,22 @@ let slidePosition = 0;
 btnLeft.addEventListener('click', slidePrevious);
 btnRigth.addEventListener('click', slideFoward);
 
+function slidePrevious()
+{
+    slidePosition -= 1; 
+    checkCount();
+}
+
+function slideFoward()
+{
+    slidePosition += 1; 
+    checkCount();
+}
+
+
 function checkCount()
 {
-    if(slidePosition == totalSlide)
+    if(slidePosition === totalSlide)
     {
         slidePosition = 0;
     }
@@ -18,19 +31,5 @@ function checkCount()
     {
         slidePosition = totalSlide - 1;
     }
-    console.log(slidePosition);
-}
-
-function slidePrevious()
-{
-    slidePosition -= 1; 
-    checkCount();
-    slideContainer.style.marginLeft = (slidePosition * slideSize)+'px';
-}
-
-function slideFoward()
-{
-    slidePosition += 1; 
     slideContainer.style.marginLeft = -(slidePosition * slideSize)+'px';
-    checkCount();
 }
